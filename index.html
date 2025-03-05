@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "grid-styles.css">
+</head>
+<body>
+
+    <div class = "banner" class = "banner">
+        <p>Here is the banner box</p>
+    </div>
+
+    <div class = "main">
+    
+        <section id = "about" class = "about">
+            <p>My name is Danielle Despatie and I'm here to punch the sun.</p>
+            <p>I have experience with</p>
+            <div class = "skills">
+                <div>
+                    <img src  = "logos/html-logo.png">
+                    <p>HTML</p>
+                </div>
+                <div>
+                    <img src = "logos/css-logo.png">
+                    <p>CSS</p>
+                </div>
+                <div>
+                    <img src = "logos/javascript-logo.png">
+                    <p>Javascript</p>
+                </div>
+                <div>
+                    <img src = "logos/react-logo.png">
+                    <p>React</p>
+                </div>
+                <div>
+                    <img src = "logos/mongodb-logo.png">
+                    <p>MongoDB</p>
+                </div>
+                <div>
+                    <img src = "logos/java-logo.png">
+                    <p>Java</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id = "projects" class = "projects">
+            <h2>Projects</h2>
+
+            <div class = "project">
+                <a href = "https://github.com/Dani-Despatie/SpotifyPlaylistProject">
+                    <img src = "images/spotify-csv.png" alt = "Spotify to CSV Screenshot">
+                </a>
+                <div class = "project-description">
+                    <h3>Spotify to CSV</h3>
+                    <p>
+                        This is a little project I made for someone I know who needed track listings for a 
+                        Spotify playlist to be exported to an Excel file.
+                    </p>
+                    <p>
+                        This website uses the Spotify API to get the listed songs in a playlist, and output the titles, 
+                        artists, and song length in a downloadable csv file. In order for the Spotify API to function it 
+                        also requires getting permission from the user to access their account data, and using access 
+                        tokens and refresh tokens to request the information.
+                    </p>
+                </div>
+            </div>
+
+            <div class = "project">
+                <a href = "https://github.com/Dani-Despatie/Taste-Buddies">
+                    <img src = "images/taste-buddies.png" alt = "Taste Buddies Screenshot">
+                </a>
+                <div class = "project-description">
+                    <h3>Taste Buddies</h3>
+                    <p>
+                        A recipe sharing website where users can find recipes, post and edit their own recipes, 
+                        and favourite recipes from other users.
+                    </p>
+                    <p>
+                        This project was made using React and MongoDB, and includes signing up, creating a 
+                        recipe for storage in the database, and the ability to favourite other user's recipes.
+                    </p>
+                </div>
+            </div>
+
+            <div class = "project">
+                <a href = "https://github.com/Dani-Despatie/project-GROUP-e-commerce">
+                    <img src = "images/e-commerce.png" alt = "eCommerce Site Screenshot">
+                </a>
+                <div class = "project-description">
+                    <h3>eCommerce Group Project</h3>
+                    <p>
+                        This was a group project for Concordia's Web Development program.
+                    </p>
+                    <p>
+                        My work was mainly on the back-end, but I also created and implemented some 
+                        front-end logic and played a significant role in the overall styling of the page.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    
+        <section id = "contact" class = "contact">
+            <h2>Contact</h2>
+            <p>Via email at <i>dani.despatie@gmail.com</i>, or</p>
+            
+            <div class = "socials">
+                <a href = "https://www.linkedin.com/in/danielledespatie/">
+                    <img src = "logos/linkedin.png">
+                </a>
+            </div>
+        </section>
+    </div>
+
+    
+</body>
+</html>
