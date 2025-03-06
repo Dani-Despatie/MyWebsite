@@ -8,25 +8,53 @@
     --shadow: drop-shadow(5px 5px #00000077);
 }
 
-/* GENERAL STYLING */
 
 body {
     background: var(--background);
     color: var(--text);
-    font-size: 24px;
+    font-size: 22px;
+    font-family: "Nunito", sans-serif;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
+ 
+/* BANNER */
 
 .banner {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0px;
     background-color: var(--banner);
     z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.logo, .navButtonContainer {
+    padding: 0px 36px;
+}
+
+.navButtonContainer > button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 1rem;
+    filter: var(--shadow);
+    margin: 0 8px;
+    transition: scale 0.2s;
+
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+/* BODY */
 
 .main {
     width: 65%;
@@ -38,23 +66,49 @@ body {
 section {
     border-bottom: 2px solid var(--accent2);
     margin: 24px 0;
+    opacity: 1;
+    animation: fade-in 4s linear;
 }
 
+@keyframes fade-in {
+    0%, 50% {opacity: 0}
+    100% {opacity: 1}
+} 
+ 
 .about {
-    align-content: center;
-    /* Min height = 100vh - banner height - top margin*/
-    min-height: calc(100vh - 65px - 30px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Min height = 100vh - banner height - top margin */
+    min-height: calc(100vh - 65px - 30px - 144px); 
+}
+ 
+h1 {
+    font-family: "Italianno", serif;
+    font-size: 6rem;
+    margin: 24px 0 0 0;
+    text-align: center;
+    position: relative;
+    left: calc(-50vw - 210px);
+
+    transition: translate 3s;
+    translate: calc(50vw + 210px); 
 }
 
+.projects {
+    padding: 70px 0;
+}
 
 .contact {
     text-align: center;
     margin-bottom: 16px;
     border: none;
+    padding-top: 70px;
 
     & .socials {
         display: flex;
-        flex-direction: row;
         justify-content: center;
     }
 
@@ -64,10 +118,12 @@ section {
         transition: scale 0.5s;
 
         &:hover {
-            scale: 1.08;
+            scale: 1.1;
         }
     }
 }
+
+/* EXTRAS */
 
 h2 {
     text-align: center;

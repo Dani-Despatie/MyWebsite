@@ -3,25 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dani Despatie</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Italianno&display=swap" rel="stylesheet">
+
+    <link rel = "icon" type = "image/x-icon" href = "images/favico.png">
     <link rel = "stylesheet" href = "styles.css">
     <link rel = "stylesheet" href = "grid-styles.css">
 </head>
-<body>
+<body id = "body">
 
     <div class = "banner" class = "banner">
-        <p>Here is the banner box</p>
-    </div>
+        <p class = "logo">This is where logo go</p>
+        <div class = "navButtonContainer">
+            <button type = "button" id = "navAbout">About</button>
+            <button type = "button" id = "navProjects">Projects</button>
+            <button type = "button" id = "navContact">Contact</button>
+        </div>
+    </div> 
 
     <div class = "main">
-    
+        <h1>Dani Despatie</h1>
         <section id = "about" class = "about">
-            <p>My name is Danielle Despatie and I'm here to punch the sun.</p>
+    
+            <p>
+                I'm a full stack web developper from Montréal who loves learning 
+                new skills and figuring out unique and exciting ways to apply them. As a former Physics 
+                student and Teaching Assistant I also have plenty of experience with Mathematics, and creating 
+                clear instructions and diagrams to communicate ideas.
+            </p>
             <p>I have experience with</p>
             <div class = "skills">
                 <div>
@@ -56,7 +72,7 @@
 
             <div class = "project">
                 <a href = "https://github.com/Dani-Despatie/SpotifyPlaylistProject">
-                    <img src = "images/spotify-csv.png" alt = "Spotify to CSV Screenshot">
+                    <img src = "projects/spotify-csv.png" alt = "Spotify to CSV Screenshot">
                 </a>
                 <div class = "project-description">
                     <h3>Spotify to CSV</h3>
@@ -75,7 +91,7 @@
 
             <div class = "project">
                 <a href = "https://github.com/Dani-Despatie/Taste-Buddies">
-                    <img src = "images/taste-buddies.png" alt = "Taste Buddies Screenshot">
+                    <img src = "projects/taste-buddies.png" alt = "Taste Buddies Screenshot">
                 </a>
                 <div class = "project-description">
                     <h3>Taste Buddies</h3>
@@ -92,7 +108,7 @@
 
             <div class = "project">
                 <a href = "https://github.com/Dani-Despatie/project-GROUP-e-commerce">
-                    <img src = "images/e-commerce.png" alt = "eCommerce Site Screenshot">
+                    <img src = "projects/e-commerce.png" alt = "eCommerce Site Screenshot">
                 </a>
                 <div class = "project-description">
                     <h3>eCommerce Group Project</h3>
@@ -100,8 +116,8 @@
                         This was a group project for Concordia's Web Development program.
                     </p>
                     <p>
-                        My work was mainly on the back-end, but I also created and implemented some 
-                        front-end logic and played a significant role in the overall styling of the page.
+                        I was the team lead for this project as well as working on the back-end, some parts of
+                        the front-end (React contexts), and the logo and colour scheme for the website.
                     </p>
                 </div>
             </div>
@@ -120,6 +136,6 @@
         </section>
     </div>
 
-    
+    <script src = "./script.js"></script>
 </body>
 </html>
