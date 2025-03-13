@@ -52,6 +52,7 @@
     padding-left: 40px;
 }
 
+/* Tablet/Phone settings */
 
 @media only screen and (max-width: 1200px) {
     .project {
