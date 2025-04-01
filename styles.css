@@ -77,8 +77,11 @@ body {
 
 .parallax {
     width: 100vw;
+    display: flex;
     overflow-x: hidden;
     overflow-y: auto;
+    position: relative;
+    justify-content: center;
 }
 
 .parallax::before {
