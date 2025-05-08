@@ -8,6 +8,9 @@
     --shadow: drop-shadow(5px 5px #00000077);
 }
 
+html {
+    scroll-padding-top: 90px;
+}
 
 body {
     background: var(--background);
@@ -68,10 +71,9 @@ body {
 .main {
     z-index: 2;
     background-color: var(--background);
-    width: 70%;
+    width: 60%;
     min-width: 750px;
     position: relative;
-    top: calc(65px + 8px);
     padding: 0 24px;
 }
 
@@ -106,7 +108,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 0px;
+    padding-top: 90px;
     /* Min height = 100vh - banner height - top margin */
     min-height: calc(100vh - 90px - 12px - 180px); 
 }
@@ -119,6 +121,7 @@ h1 {
     position: relative;
     color: var(--accent2);
     filter: var(--shadow);
+    top: 90px;
 
     animation: slide 2s ease-out;
 }
@@ -168,7 +171,7 @@ h2 {
 }
 
 /* PHONE STYLING */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
     .main {
         min-width: 0px;
         font-size: 0.85em
