@@ -4,6 +4,8 @@
     display: grid;
     grid-template-columns: auto auto auto;
     width: 770px;
+    padding-top: 48px;
+
 }
 
 .skills div {
