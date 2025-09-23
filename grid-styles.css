@@ -5,6 +5,7 @@
     grid-template-columns: auto auto auto;
     width: 770px;
     padding-top: 48px;
+    background-color:var()
 
 }
 
@@ -13,7 +14,7 @@
     align-items: center;
     justify-content: center;
     color: var(--accent1);
-    transition: color 1s;
+    transition: color 0.75s;
 
     &:hover {
         color: var(--accent1-light);
